@@ -3,6 +3,22 @@
  *
  * ------------------------------------------------------------------- */
 
+
+$("button").on("click", function(){
+var myText = $("#myText").val();
+janelaPopUp.abre( "asdf", $("#size").val() + " "  + $(this).html() + ' ' + $("#mode").val(),  $("#title").val() ,  myText)
+});
+janelaPopUp.abre( "example", 'p red',  'Sorry for the Inconvenience' ,  'Our Service has been Terminated.<br> We Will Come Back ASAP! <img style="width:25px; height:25px margin-top:5px;" src="images/smile.png"> <br>Thankyou');
+setTimeout(function(){janelaPopUp.fecha('example');}, 5000);
+
+
+
+
+
+
+
+
+
 (function($) {
 
     "use strict";
